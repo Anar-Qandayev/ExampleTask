@@ -1,0 +1,192 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section id="onepage">
+    <div class="text1">
+        <h1 style="font-size: 80px;">GET PAGE DONE</h1><br>
+        <h1>It take efforts</h1><br>
+        <h4>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</h4><br>
+        <button type="button" class="btn btn-outline-danger">DOWNLOAD THIS THEME NOW</button>
+    </div>
+</section>
+<section id="mainpage">
+    <div class="text2">
+        <h1>OUR SERVICES :</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="cardd">
+                    <div class="card-body">
+                        <p class="card-title" style="font-size: 30px;">Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="cardd">
+                    <div class="card-body">
+                        <p class="card-title" style="font-size: 30px;">Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+
+        <div class="row">
+           @foreach (var item in Model.Services)
+           {
+               <div class="col-sm-4">
+                   <div class="card" style="background-color:rgb(0, 121, 138) ;text-align: center;color: white;height: 400px;">
+                       <div class="card-body">
+                           <i class="bi bi-tv" style="font-size: 100px;position: relative;animation: mymove infinite;animation-duration: 2s;"></i>
+                           <h5 class="card-title">@item.TvName</h5>
+                           <p class="card-text">@item.TvInformation</p>
+                           <p class="card-text">@item.TvText</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-sm-4">
+                   <div class="card" style="background-color:rgb(0, 121, 138) ;text-align: center;color: white;height: 400px;">
+                       <div class="card-body">
+                           <i class="las la-flask" style="font-size: 100px; padding: 28px 10px; position: relative;animation-timing-function: linear;animation: mymov 3s infinite;"></i>
+                           <h5 class="card-title">@item.LabName</h5>
+                           <p class="card-text">@item.LabInformation</p>
+                           <p class="card-text">@item.LabText</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-sm-4">
+                   <div class="card" style="background-color:rgb(0, 121, 138) ;text-align: center;color: white;height: 400px;">
+                       <div class="card-body">
+                           <i class="bi bi-credit-card" style="font-size: 100px; position: relative;animation: myfirst 3s 2;animation-direction: alternate;"></i>
+                           <h5 class="card-title">@item.CardName</h5>
+                           <p class="card-text">@item.CardInformation</p>
+                           <p class="card-text">@item.CardText</p>
+                       </div>
+                   </div>
+               </div>
+           }
+        </div><br><br>
+        <p class="card-title" style="font-size: 30px;">Lorem ipsum dolor sit amet</p>
+        <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio.
+            Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+        </p>
+    </div>
+</section>
+<section id="street">
+    <div class="row" id="text3">
+        <div class="col-sm-6">
+            <div class="cardd" style=" background-color:rgb(0, 121, 138);color: white; text-align: center;">
+                <div class="card-body">
+                    <h1 class="card-title" style="font-size: 50px;">Featured In Wall Street</h1><br>
+                    <h5 class="card-text">and many other magzines..</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="cardd" style=" background-color:rgb(0, 121, 138);color: white; text-align: center;">
+                <div class="card-body">
+                    <h1 class="card-title" style="font-size: 50px;">300+</h1>
+                    <h5 class="card-title">Reports</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+
+<section class="raiting">
+    <div class="row" id="text4">
+        <div class="col-sm-3">
+            <div class="cardd" style=" background-color:rgb(0, 121, 138);color: white; text-align: center;">
+                <div class="card-body">
+                    <h1 style="font-size: 50px;">5000+</h1>
+                    <h5 class="card-title">Projects</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="cardd" style=" background-color:rgb(0, 121, 138);color: white; text-align: center;">
+                <div class="card-body">
+                    <h1 style="font-size: 50px;">205+</h1>
+                    <h5 class="card-title">Countries</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="cardd" style=" background-color:rgb(0, 121, 138);color: white; text-align: center;">
+                <div class="card-body">
+                    <h1 style="font-size: 50px;">1300+</h1>
+                    <h5 class="card-title">Offices</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="cardd" style=" background-color:rgb(0, 121, 138);color: white; text-align: center;">
+                <div class="card-body">
+                    <h1 style="font-size: 50px;">2400+</h1>
+                    <h5 class="card-title">Clients</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="contact">
+    <div class="text5">
+        <h1 style="color: teal;">CONTACT US :</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="cardd">
+                    <div class="card-body">
+                        <p class="card-title" style="font-size: 30px;">Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.</p><br><br>
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label"></label>
+                                <input type="email" class="form-control" placeholder="Name" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label"></label>
+                                <input type="password" class="form-control" placeholder="Email Address" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label"></label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Message" style="height: 90px;">
+                            </div>
+                            <button type="button" class="btn btn-outline-primary" style="width: 160px;">Sumbit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="cardd">
+                    <div class="card-body">
+                        <p class="card-title" style="font-size: 30px;">Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.</p><br><br>
+                        <div style="display: flex;">
+                            <p><h5 style="border-radius: 1%;border: 1px solid red ;width: 80px;">Address:</h5>123,Your locality , Counrty Name, Pin-20100090.</p>
+                        </div>
+                        <div style="display: flex;">
+                            <p><h5 style="border-radius: 1%;border: 1px solid red ;width: 58px;">Email:</h5>info@yourdomain.com</p>
+                        </div>
+                        <div style="display: flex;">
+                            <p><h5 style="border-radius: 1%;border: 1px solid red ;width: 50px;">Web:</h5>www.yourdomain.com</p>
+                        </div>
+                        <div style="display: flex;">
+                            <p><h5 style="border-radius: 1%;border: 1px solid red ;width: 75px;">Mobile:</h5>+00-909-808-707-00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
